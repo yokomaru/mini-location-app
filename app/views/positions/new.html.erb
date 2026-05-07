@@ -1,9 +1,18 @@
 <% content_for :title, "New position" %>
 
 <h1>New position</h1>
+<div data-controller="geolocation">
+  <button data-action="click->geolocation#fetchPosition">
+    位置情報取得
+  </button>
 
-<%= render "form", position: @position %>
+  <p data-geolocation-target="status">位置情報取得状況</p>
 
+  <p data-geolocation-target="position">位置情報はありません</p>
+
+
+  <%= render "form", position: @position %>
+</div>
 <br>
 
 <div>

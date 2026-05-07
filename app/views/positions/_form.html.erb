@@ -12,13 +12,15 @@
   <% end %>
 
   <div>
-    <%= form.label :latitude, style: "display: block" %>
-    <%= form.text_field :latitude %>
-  </div>
+    <div >
+      <%= form.label :latitude, style: "display: block" %>
+      <%= form.text_field :latitude , data: { geolocation_target: "latitude" }%>
+    </div>
 
-  <div>
-    <%= form.label :longitude, style: "display: block" %>
-    <%= form.text_field :longitude %>
+    <div>
+      <%= form.label :longitude, style: "display: block" %>
+      <%= form.text_field :longitude, data: { geolocation_target: "longitude" }%>
+    </div>
   </div>
 
   <div>
