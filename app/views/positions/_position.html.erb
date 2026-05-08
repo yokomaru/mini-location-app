@@ -1,12 +1,16 @@
 <div id="<%= dom_id position %>">
   <div>
     <strong>Latitude:</strong>
-    <%= position.latitude %>
+    <span data-map-target="latitude">
+      <%= position.latitude %>
+    </span>
   </div>
 
   <div>
     <strong>Longitude:</strong>
-    <%= position.longitude %>
+    <span data-map-target="longitude">
+      <%= position.longitude %>
+    </span>
   </div>
 
 </div>

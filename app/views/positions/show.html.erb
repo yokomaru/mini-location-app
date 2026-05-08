@@ -1,7 +1,9 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @position %>
-
+  <div data-controller="map">
+    <%= render @position %>
+    <div class="leaflet-container"data-target="map.placeholder" style="height: 500px; width: 500px;"></div>
+  </div>
 <div>
   <%= link_to "Edit this position", edit_position_path(@position) %> |
   <%= link_to "Back to positions", positions_path %>
